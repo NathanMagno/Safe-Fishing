@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #00aaff, #53c3d9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.ocean-container {
+  text-align: center;
+  align-items: center;
+}
+
+.ocean-wave {
+  position: relative;
+  width: 200vw;
+  height: 40vh;
+  align-content: center;
+  display: flex;
+  background: url(../img/onda.webp) repeat-x;
+  background-size: cover;
+  animation: wave-animation 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes wave-animation {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(40vh);
+  }
+}
+
+.content {
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+}
