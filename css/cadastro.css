@@ -22,14 +22,10 @@
   align-items: center;
 }
 
-.caixa {
+#fixa-onda {
   margin: auto;
-  margin-top: 4vh;
   width: 45vw;
   height: 50vh;
-  background-color: #4d4d4d5d;
-  border-radius: 22px;
-  border: inset 10px rgba(100, 100, 100, 0.116);
   z-index: 2;
 }
 
@@ -56,15 +52,25 @@
 }
 
 .content {
-  margin-bottom: 10vh;
+  display: flex;
+  margin-top: 30vh;
   z-index: 0;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
 }
 
 h1 {
-  font-size: 3em;
-  margin: 0;
+  font-size: 3vw;
+}
+
+dialog {
+  margin: auto;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.2vw;
+}
+
+#entrar-modal {
 }

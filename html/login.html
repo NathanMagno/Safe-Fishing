@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ocean Theme Background</title>
     <link rel="stylesheet" href="../css/cadastro.css" />
+    <script src="../js/cadastro.js" defer></script>
   </head>
   <body>
     <div class="cadastro-container">
@@ -12,7 +13,57 @@
         <div class="content">
           <h1>Bem-vindo ao Oceano</h1>
           <p>Um lugar tranquilo e sereno.</p>
-          <div class="caixa"><div class="oceano-onda"></div></div>
+          <dialog>
+            <p class="valida"></p>
+
+            <form
+              action="#"
+              method="get"
+              onsubmit="return validacao(idEmail,idSenha)"
+            >
+              <fieldset>
+                <legend>LOGIN</legend>
+                <div>
+                  <label for="idEmail">Email</label>
+                  <input
+                    type="email"
+                    name="txtEmail"
+                    id="idEmail"
+                    placeholder="Digite seu email"
+                  />
+                </div>
+                <div>
+                  <label for="idSenha">Senha</label>
+                  <input
+                    type="password"
+                    name="txtSenha"
+                    id="idSenha"
+                    placeholder="Digite sua senha"
+                  />
+
+                  <i class="fa-regular fa-eye-slash"></i>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="txtLembrar"
+                    id="idLembrar"
+                    value="lembrete"
+                    checked
+                  />
+                  <label for="idLembrar">Lembrar-me</label>
+                </div>
+                <div>
+                  <button type="submit">Enviar</button>
+                </div>
+              </fieldset>
+            </form>
+          </dialog>
+
+          <div id="fixa-onda">
+            <button id="entrar-modal">Começar</button>
+            <div class="oceano-onda"></div>
+          </div>
         </div>
       </div>
     </div>
