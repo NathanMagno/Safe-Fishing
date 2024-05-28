@@ -6,7 +6,7 @@
 }
 
 .cadastro-container {
-  position: fixed;
+  position: relative;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(to bottom, #00aaff, #53c3d9);
@@ -23,15 +23,13 @@
 }
 
 #fixa-onda {
-  margin: auto;
   width: 45vw;
-  height: 50vh;
+  height: 55vh;
   z-index: 2;
 }
 
 .oceano-onda {
-  position: relative;
-  margin-top: 10vh;
+  position: fixed;
   width: 200vw;
   height: 60vh;
   align-content: start;
@@ -51,6 +49,11 @@
   }
 }
 
+b {
+  color: #fd8700;
+  text-shadow: black 0.08vw 0.1vw 0.3vw;
+}
+
 .content {
   display: flex;
   margin-top: 30vh;
@@ -66,11 +69,40 @@ h1 {
 
 dialog {
   margin: auto;
+  width: 50vw;
+  height: 60vh;
+  background-color: rgba(22, 22, 22, 0.685);
+  border-radius: 16px;
+  border: inset black 1vw 0.2vw;
+  padding: 2vw;
+
+  form {
+    
+  }
 }
 
 p {
-  font-size: 1.2vw;
+  font-size: 1.6vw;
+  margin-bottom: 16vh;
 }
 
-#entrar-modal {
+button {
+  display: block;
+  padding: 0.4vw;
+  background-color: #00000036;
+  color: rgb(255, 255, 255);
+  border-radius: 2em;
+  border-color: #fdfdfdec;
+  border-style: solid;
+  cursor: pointer;
+  margin: auto;
+  font-size: 1.6vw;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transition: 1.2s ease-in;
+    background-color: #fd8700;
+  }
 }
