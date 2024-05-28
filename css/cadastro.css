@@ -1,42 +1,63 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.cadastro-container {
+  position: fixed;
+  width: 100vw;
   height: 100vh;
   background: linear-gradient(to bottom, #00aaff, #53c3d9);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
+
   color: white;
 }
 
-.ocean-container {
+.onda-container {
   text-align: center;
   align-items: center;
 }
 
-.ocean-wave {
+.caixa {
+  margin: auto;
+  margin-top: 4vh;
+  width: 45vw;
+  height: 50vh;
+  background-color: #4d4d4d5d;
+  border-radius: 22px;
+  border: inset 10px rgba(100, 100, 100, 0.116);
+  z-index: 2;
+}
+
+.oceano-onda {
   position: relative;
+  margin-top: 10vh;
   width: 200vw;
-  height: 40vh;
-  align-content: center;
+  height: 60vh;
+  align-content: start;
   display: flex;
   background: url(../img/onda.webp) repeat-x;
   background-size: cover;
-  animation: wave-animation 20s linear infinite;
+  animation: wave-animation 34s linear infinite;
   z-index: -1;
 }
 
 @keyframes wave-animation {
   from {
-    transform: translateX(-20%);
+    transform: translateX(-60%);
   }
   to {
-    transform: translateX(40vh);
+    transform: translateX(-20%);
   }
 }
 
 .content {
-  z-index: 1;
+  margin-bottom: 10vh;
+  z-index: 0;
 }
 
 h1 {
