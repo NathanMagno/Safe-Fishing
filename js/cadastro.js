@@ -3,16 +3,22 @@ document.addEventListener('DOMContentLoaded', () => {
 const esconde = document.querySelector("dialog");
 
 const btnEsconde = document.querySelector("#entrar-modal");
-const btnFechar = document.getElementById("#btn-fechar");
+const btnFechar = document.getElementById("btn-fechar");
 
 btnEsconde.addEventListener("click",() => {
  esconde.showModal();
 });
-
-    btnFechar.addEventListener("click",() => {
+    if (btnFechar)
+    {
+     btnFechar.addEventListener("click",() => {
     esconde.close();
     });
-
+    }
+    else
+    {
+        console.log("Não encontrou");
+    }
+  
 
 listaUsuario = [
 {nome:"Nathan Magno", emailUsuario: "nathan.magno@email.com", senhaUsuario: "123456", idade:19, altura:1.70},
@@ -58,11 +64,5 @@ const validar = (email, senha)=>{
            
             return false;
     }
-
-
-const btnCC = document.querySelector("#btn-cc");
-btnCC.addEventListener("click", ()=>{
-    console.log("oiii");
-});
 
 });
