@@ -117,8 +117,9 @@ legend {
 #opcoes-cadastro {
   display: flex;
   flex-direction: row;
-  gap: 10vw;
-  justify-content: center;
+  margin-inline: 6vw;
+  justify-content: space-between;
+
   a {
     text-decoration: none;
     color: #fd8700;
@@ -143,4 +144,20 @@ p {
 .negado {
   font-size: 130%;
   color: #db1212;
+}
+
+.form-cc {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5vh;
+  margin-bottom: 12vh;
+}
+
+.entrada-cc {
+  display: flex;
+  flex-direction: column;
+}
+
+#btn-cc {
+
 }

@@ -1,15 +1,18 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 const esconde = document.querySelector("dialog");
 
 const btnEsconde = document.querySelector("#entrar-modal");
-const btnFechar = document.querySelector("#btn-fechar");
+const btnFechar = document.getElementById("#btn-fechar");
 
-btnEsconde.addEventListener("click",()=>{
+btnEsconde.addEventListener("click",() => {
  esconde.showModal();
 });
 
-btnFechar.addEventListener("click",()=>{
+    btnFechar.addEventListener("click",() => {
     esconde.close();
-});
+    });
+
 
 listaUsuario = [
 {nome:"Nathan Magno", emailUsuario: "nathan.magno@email.com", senhaUsuario: "123456", idade:19, altura:1.70},
@@ -35,7 +38,7 @@ const validar = (email, senha)=>{
 
             setTimeout(()=>{
             window.location.href = "../html/tela-inicial.html";
-            }, 5000);
+            }, 3000);
            
                  return false;
         }
@@ -49,9 +52,17 @@ const validar = (email, senha)=>{
             setTimeout(()=>{
                 msg.setAttribute("class", "valida");
                 msg.textContent = "";
-            }, 5000);
+            }, 3000);
             
       
            
             return false;
     }
+
+
+const btnCC = document.querySelector("#btn-cc");
+btnCC.addEventListener("click", ()=>{
+    console.log("oiii");
+});
+
+});
