@@ -5,6 +5,6 @@ Baseado nessa dor, o projeto **Safe Fishing** é uma aplicação que busca auxil
 
 # Integrantes
 
-Nathan Magno Gustavo Cônsolo  RM 558987
-Gustavo de Aguiar Lima Silva  RM 557707
-Gabriel Yuji Suzuki  RM 556588
+* Nathan Magno Gustavo Cônsolo  RM 558987
+* Gustavo de Aguiar Lima Silva  RM 557707
+* Gabriel Yuji Suzuki  RM 556588
