@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
 
 const esconde = document.querySelector("dialog");
 
@@ -65,7 +65,6 @@ const validar = (email, senha)=>{
             return false;
     }
 
-});
 
 const btnCC = document.getElementById("btn-cc");
 btnCC.addEventListener("click", ()=>{
