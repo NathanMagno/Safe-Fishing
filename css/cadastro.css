@@ -6,7 +6,7 @@
 }
 
 .cadastro-container {
-  position: relative;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(to bottom, #00aaff, #53c3d9);
@@ -49,9 +49,33 @@
   }
 }
 
+fieldset {
+  margin: auto;
+  position: relative;
+  display: flex;
+  height: 64vh;
+  flex-direction: column;
+  width: 40vw;
+  border-radius: 12px;
+  text-align: center;
+  color: #fd8700;
+  gap: 6vh;
+  padding: 1vw;
+  font-size: 1.2vw;
+}
+
 b {
   color: #fd8700;
   text-shadow: black 0.08vw 0.1vw 0.3vw;
+}
+
+#btn-fechar {
+  margin-top: 2vh;
+
+  &:hover {
+    transition: 1.2s ease-in;
+    background-color: #db1212;
+  }
 }
 
 .content {
@@ -67,17 +91,45 @@ h1 {
   font-size: 3vw;
 }
 
+.entrada {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1vw;
+}
+
 dialog {
+  position: absolute;
   margin: auto;
   width: 50vw;
-  height: 60vh;
-  background-color: rgba(22, 22, 22, 0.685);
+  height: 80vh;
+  background-color: rgba(22, 22, 22, 0.849);
   border-radius: 16px;
   border: inset black 1vw 0.2vw;
-  padding: 2vw;
+  padding: 1.2vw;
+}
 
-  form {
-    
+input {
+  width: 30vw;
+  padding: 0.8em;
+  height: 5vh;
+  font-size: 100%;
+  border-radius: 0.8em;
+}
+
+legend {
+  font-size: 130%;
+}
+
+#opcoes-cadastro {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    color: #fd8700;
   }
 }
 

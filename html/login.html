@@ -14,8 +14,6 @@
           <h1>Bem-vindo ao <b>Safe Fishing</b></h1>
           <p>Um lugar tranquilo e sereno.</p>
           <dialog>
-            <p class="valida"></p>
-
             <form
               action="#"
               method="get"
@@ -23,7 +21,8 @@
             >
               <fieldset>
                 <legend>LOGIN</legend>
-                <div>
+                <span class="valida"></span>
+                <div class="entrada">
                   <label for="idEmail">Email</label>
                   <input
                     type="email"
@@ -32,7 +31,7 @@
                     placeholder="Digite seu email"
                   />
                 </div>
-                <div>
+                <div class="entrada">
                   <label for="idSenha">Senha</label>
                   <input
                     type="password"
@@ -42,20 +41,15 @@
                   />
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    name="txtLembrar"
-                    id="idLembrar"
-                    value="lembrete"
-                    checked
-                  />
-                  <label for="idLembrar">Lembrar-me</label>
-                </div>
-                <div>
                   <button type="submit">Entrar</button>
+                </div>
+                <div id="opcoes-cadastro">
+                  <a href="">Esqueci minha senha</a>
+                  <a href="">Criar conta</a>
                 </div>
               </fieldset>
             </form>
+            <button id="btn-fechar">Fechar</button>
           </dialog>
 
           <div id="fixa-onda">
