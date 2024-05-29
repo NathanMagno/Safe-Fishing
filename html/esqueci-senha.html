@@ -4,6 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/cadastro.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="cabecalho-laranja">
+      <h1 class="texto-cadastro">Esqueci a senha</h1>
+    </header>
+    <div class="cadastro-container">
+      <main>
+        <p class="informativo">
+          Clique no botão para enviar o código de verificação para seu email:
+        </p>
+        <form>
+          <div>
+            <h2 class="texto-cadastro">Email</h2>
+            <label for="email"></label>
+            <input id="email" type="email" placeholder="Digite seu email" />
+          </div>
+          <nav>
+            <div class="btn-link">
+              <a class="link-btn" href="./codigo-verificacao.html">Enviar</a>
+            </div>
+          </nav>
+        </form>
+      </main>
+      <footer>
+        <nav>
+          <ul class="rodape-link">
+            <li><a href="./login.html">Página de login</a></li>
+            <li><a href="./criar-conta.html">Criar conta</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
 </html>
