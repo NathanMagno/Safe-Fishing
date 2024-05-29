@@ -110,14 +110,6 @@ dialog {
   padding: 1.2vw;
 }
 
-input {
-  width: 30vw;
-  padding: 0.8em;
-  height: 5vh;
-  font-size: 100%;
-  border-radius: 0.8em;
-}
-
 legend {
   font-size: 130%;
 }
@@ -130,33 +122,17 @@ legend {
   a {
     text-decoration: none;
     color: #fd8700;
+
+    &:hover {
+      font-size: 1.4vw;
+      transition: all 0.2s linear;
+    }
   }
 }
 
 p {
   font-size: 1.6vw;
   margin-bottom: 16vh;
-}
-
-button {
-  display: block;
-  padding: 0.4vw;
-  background-color: #00000036;
-  color: rgb(255, 255, 255);
-  border-radius: 2em;
-  border-color: #fdfdfdec;
-  border-style: solid;
-  cursor: pointer;
-  margin: auto;
-  font-size: 1.6vw;
-  width: 10vw;
-  justify-content: center;
-  align-items: center;
-
-  &:hover {
-    transition: 1.2s ease-in;
-    background-color: #fd8700;
-  }
 }
 
 .sucesso {
