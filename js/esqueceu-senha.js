@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 listaEmails = [
     "nathan.magno@email.com",
     "dona.jo@email.com",
@@ -53,3 +45,13 @@ const validar_email = (email)=>{
             return false;
     } 
 
+
+function codigo(input){
+    if (input.value > 0)
+    {
+    window.location.href = "../html/nova-senha.html";
+    }
+    else{
+        console.log("Código inváido");
+    }
+}
