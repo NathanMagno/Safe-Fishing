@@ -94,7 +94,7 @@ b {
   z-index: 0;
   flex-direction: column;
   align-content: center;
-  text-align: center;
+  text-align: start;
 }
 
 h1 {
@@ -148,7 +148,7 @@ a {
   color: #fd8700;
 
   &:hover {
-    font-size: 1.4vw;
+    font-size: 2vw;
     transition: all 0.2s linear;
   }
 }
@@ -172,7 +172,11 @@ p {
   display: flex;
   flex-direction: column;
   gap: 6.5vh;
-  margin-bottom: 12vh;
+  margin-top: 72vh;
+}
+
+#btn-cc {
+  margin-top: 10vh;
 }
 
 .entrada-cc {
@@ -183,4 +187,9 @@ p {
 .informativo {
   position: static;
   margin-top: 50vh;
+}
+
+#btn-salvar-senha {
+  display: block;
+  margin-top: 10vh;
 }
