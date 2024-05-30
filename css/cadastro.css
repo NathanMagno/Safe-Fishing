@@ -8,6 +8,23 @@
   align-items: center;
 
   color: white;
+
+  main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .onda-container {
@@ -95,12 +112,14 @@ h1 {
 dialog {
   position: absolute;
   margin: auto;
+  padding: 2%;
   width: 50vw;
   height: 84vh;
   background-color: rgba(22, 22, 22, 0.849);
   border-radius: 16px;
   border: inset black 1vw 0.2vw;
   padding: 1.2vw;
+  color: #fd8700;
 }
 
 legend {
@@ -121,6 +140,16 @@ legend {
       font-size: 1.4vw;
       transition: all 0.2s linear;
     }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #fd8700;
+
+  &:hover {
+    font-size: 1.4vw;
+    transition: all 0.2s linear;
   }
 }
 
@@ -151,5 +180,7 @@ p {
   flex-direction: column;
 }
 
-#btn-cc {
+.informativo {
+  position: static;
+  margin-top: 50vh;
 }

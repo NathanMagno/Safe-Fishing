@@ -2,9 +2,6 @@ const esconde = document.querySelector("dialog");
 
 const btnEsconde = document.querySelector("#entrar-modal");
 const btnFechar = document.getElementById("btn-fechar");
-const btnCC = document.querySelector("#btn-cc");
-
-
 
 
 btnEsconde.addEventListener("click",() => {
@@ -67,6 +64,3 @@ const validar = (email, senha)=>{
             return false;
     }
 
-btnCC.addEventListener("click", ()=>{
-  window.location.href = "../html/login.html";
-});
