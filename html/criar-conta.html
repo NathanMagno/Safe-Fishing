@@ -20,7 +20,12 @@
     </header>
     <div class="cadastro-container">
       <main>
-        <form class="form form-cc">
+        <form
+          class="form form-cc"
+          action="#"
+          method="get"
+          onsubmit="return criarConta(nome, cpf, email, senha)"
+        >
           <div class="entrada-cc">
             <label for="nome">Nome</label>
             <input
@@ -41,10 +46,9 @@
             <label for="senha">Senha</label>
             <input id="senha" type="password" placeholder="Digite sua senha" />
           </div>
+          <button id="btn-cc" type="submit">Criar</button>
         </form>
-        <nav>
-          <button id="btn-cc">Criar</button>
-        </nav>
+        <nav></nav>
       </main>
     </div>
   </body>
