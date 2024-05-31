@@ -10,7 +10,7 @@ const criarConta = (nomeU, cpfU, emailU, senhaU) => {
   criarUser.senhaUsuario = senhaU.value;
 
   localStorage.setItem("novaConta", JSON.stringify(criarUser));
-
+  window.location.href = "../html/login.html";
 
 
 
