@@ -94,7 +94,7 @@ b {
   z-index: 0;
   flex-direction: column;
   align-content: center;
-  text-align: start;
+  text-align: center;
 }
 
 h1 {

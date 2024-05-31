@@ -20,10 +20,10 @@ btnEsconde.addEventListener("click",() => {
   
 
 listaUsuario = [
-{nome:"Nathan Magno", emailUsuario: "nathan.magno@email.com", senhaUsuario: "123456", idade:19, altura:1.70},
-{nome:"Dona Jo", emailUsuario: "dona.jo@email.com", senhaUsuario: "horadocafe", idade: 59, altura: 1.65},
-{nome:"Lucas poucas", emailUsuario: "lucas@email.com", senhaUsuario: "nsei", idade: 26, altura: 1.78},
-{nome:"Mr. Fiap", emailUsuario: "fiap@email.com", senhaUsuario: "euestouaqui", idade: 44, altura: 1.52},
+{nome:"Nathan Magno", emailUsuario: "nathan.magno@email.com", senhaUsuario: "123456", cpf: 50232254254},
+{nome:"Dona Jo", emailUsuario: "dona.jo@email.com", senhaUsuario: "horadocafe", cpf: 53424534575},
+{nome:"Lucas poucas", emailUsuario: "lucas@email.com", senhaUsuario: "nsei", cpf: 51424334573},
+{nome:"Mr. Fiap", emailUsuario: "fiap@email.com", senhaUsuario: "euestouaqui", cpf: 73423563565},
 ];
 
 
