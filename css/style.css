@@ -92,3 +92,12 @@ footer {
 #modal-codigo {
   height: 70vh !important;
 }
+
+#titulo-preserva {
+  margin-top: 100vh;
+}
+
+section {
+  text-align: start;
+  padding: 2.5%;
+}
