@@ -146,9 +146,10 @@ legend {
 a {
   text-decoration: none;
   color: #fd8700;
+  text-shadow: black 0.08vw 0.05vw 0.2vw;
 
   &:hover {
-    font-size: 2vw;
+    font-size: 1.8vw;
     transition: all 0.2s linear;
   }
 }
