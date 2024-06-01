@@ -104,3 +104,14 @@
       }
     }
   }
+
+  footer {
+    display: flex;
+    text-align: end;
+    margin-top: 20vw;
+    
+  }
+
+  h1 {
+    font-size: 3vw;
+  }

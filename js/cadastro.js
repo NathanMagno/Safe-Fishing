@@ -18,15 +18,25 @@ btnEsconde.addEventListener("click",() => {
         console.log("Não encontrou");
     }
   
+const novoUsuario = JSON.parse(localStorage.getItem("novaConta")); 
 
-listaUsuario = [
+
+let listaUsuario = [
 {nome:"Nathan Magno", emailUsuario: "nathan.magno@email.com", senhaUsuario: "123456", cpf: 50232254254},
 {nome:"Dona Jo", emailUsuario: "dona.jo@email.com", senhaUsuario: "horadocafe", cpf: 53424534575},
 {nome:"Lucas poucas", emailUsuario: "lucas@email.com", senhaUsuario: "nsei", cpf: 51424334573},
 {nome:"Mr. Fiap", emailUsuario: "fiap@email.com", senhaUsuario: "euestouaqui", cpf: 73423563565},
 ];
 
+if (novoUsuario){
+    listaUsuario.push(novoUsuario);
+    console.log("foi add");
+}
+else{
+    console.log("Nenhum usuário foi encontrado");
+    }
 
+console.log(listaUsuario);
 
 const validar = (email, senha)=>{
 
