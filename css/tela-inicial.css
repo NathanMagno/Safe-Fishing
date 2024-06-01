@@ -104,3 +104,10 @@
       }
     }
   }
+
+  footer {
+    display: flex;
+    text-align: end;
+    margin-top: 20vw;
+    
+  }
