@@ -185,7 +185,7 @@ p {
 }
 
 #btn-cc {
-  margin-top: 10vh;
+  margin-top: 0.1vh;
 }
 
 .entrada-cc {
@@ -196,6 +196,12 @@ p {
 .informativo {
   position: static;
   margin-top: 50vh;
+}
+
+.informativo2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
 }
 
 #btn-salvar-senha {

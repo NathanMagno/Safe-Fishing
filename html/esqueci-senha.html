@@ -20,7 +20,7 @@
     </header>
     <div class="cadastro-container">
       <main>
-        <span class="informativo">
+        <span class="informativo informativo1">
           Clique no botão para enviar o código de verificação para seu email:
         </span>
         <dialog id="modal-codigo">
@@ -39,6 +39,9 @@
             </form>
             <div>
               <button onclick="codigo(inpCodigo)">Enviar</button>
+              <span class="informativo informativo2">
+                Caso deseje fechar esta tela, pressione "esc"
+              </span>
             </div>
           </div>
         </dialog>
@@ -49,9 +52,8 @@
             <label for="email"></label>
             <input id="email" type="email" placeholder="Digite seu email" />
           </div>
-         
-            <button type="submit">Enviar</button>
-        
+
+          <button type="submit">Enviar</button>
         </form>
       </main>
 
