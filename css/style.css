@@ -101,3 +101,10 @@ section {
   text-align: start;
   padding: 2.5%;
 }
+
+@media screen and (max-width: 500px) {
+  button{
+    width: 50px;
+    height: 30px;
+  }
+}

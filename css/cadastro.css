@@ -114,12 +114,15 @@ dialog {
   margin: auto;
   padding: 2%;
   width: 50vw;
-  height: 84vh;
+  height: 88vh;
   background-color: rgba(22, 22, 22, 0.849);
   border-radius: 16px;
   border: inset black 1vw 0.2vw;
   padding: 1.2vw;
   color: #fd8700;
+
+  overflow: hidden;
+
 }
 
 legend {
@@ -127,29 +130,23 @@ legend {
 }
 
 #opcoes-cadastro {
+  position: static;
   display: flex;
   flex-direction: row;
   margin-inline: 6vw;
   justify-content: space-between;
 
-  a {
-    text-decoration: none;
-    color: #fd8700;
-
-    &:hover {
-      font-size: 1.4vw;
-      transition: all 0.2s linear;
-    }
-  }
 }
 
 a {
+  position: static;
   text-decoration: none;
   color: #fd8700;
+  font-size: 1.2vw;
   text-shadow: black 0.08vw 0.05vw 0.2vw;
 
   &:hover {
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     transition: all 0.2s linear;
   }
 }
@@ -159,12 +156,26 @@ p {
   margin-bottom: 16vh;
 }
 
+.container-valida{
+  position: static;
+  margin: auto;
+  width: 30vw;
+  height: 2vw;
+  
+  text-align: center;
+  align-items: center;
+
+}
+
 .sucesso {
+position: relative;
   font-size: 130%;
   color: rgb(1, 223, 1);
 }
 
 .negado {
+ 
+  position: relative;
   font-size: 130%;
   color: #db1212;
 }
@@ -196,3 +207,23 @@ p {
 }
 
 
+@media screen and (max-width: 500px) {
+  a{
+    font-size: 2.2vw;
+  }
+
+  dialog{
+    height: 30vh;
+  }
+
+  fieldset{
+    height: 20vh;
+  }
+
+  input
+  {
+    width: 50vw;
+    padding: 1%;
+    height: 4vh;
+  }
+}
