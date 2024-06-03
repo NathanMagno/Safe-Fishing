@@ -15,6 +15,7 @@ const validar_email = (email)=>{
         if ((email.value == listaEmails[u]))
         {
           
+            localStorage.setItem("email-recuperacao", JSON.stringify(listaEmails[u]));
             const modal_codigo = document.querySelector("dialog");
             
             document.querySelector("form").reset();

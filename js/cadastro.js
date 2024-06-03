@@ -19,7 +19,8 @@ btnEsconde.addEventListener("click",() => {
     }
   
 const novoUsuario = JSON.parse(localStorage.getItem("novaConta")); 
-
+const novaSenha = JSON.parse(localStorage.getItem("senhaUser"));
+const emailRecuperacao = JSON.parse(localStorage.getItem("email-recuperacao"));
 
 let listaUsuario = [
 {nome:"Nathan Magno", emailUsuario: "nathan.magno@email.com", senhaUsuario: "123456", cpf: 50232254254},
@@ -27,6 +28,19 @@ let listaUsuario = [
 {nome:"Lucas poucas", emailUsuario: "lucas@email.com", senhaUsuario: "nsei", cpf: 51424334573},
 {nome:"Mr. Fiap", emailUsuario: "fiap@email.com", senhaUsuario: "euestouaqui", cpf: 73423563565},
 ];
+
+if (emailRecuperacao != null)
+{
+    for (let u = 0; u < listaUsuario.length; u++) 
+    {
+        
+        if (emailRecuperacao == listaUsuario[u].emailUsuario)
+        {
+            listaUsuario[u].senhaUsuario = novaSenha;
+            console.log("nova senha é: " + listaUsuario[u].senhaUsuario);
+        }
+    }   
+}
 
 if (novoUsuario){
     listaUsuario.push(novoUsuario);
