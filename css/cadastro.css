@@ -137,18 +137,6 @@ legend {
   justify-content: space-between;
 }
 
-a {
-  position: static;
-  text-decoration: none;
-  color: #fd8700;
-  font-size: 1.2vw;
-  text-shadow: black 0.08vw 0.05vw 0.2vw;
-
-  &:hover {
-    font-size: 1.4vw;
-    transition: all 0.2s linear;
-  }
-}
 
 p {
   font-size: 1.6vw;
