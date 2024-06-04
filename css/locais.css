@@ -26,15 +26,15 @@ h2 {
 }
 
 #favoritos-container {
+  margin-top: 6vh;
   display: grid;
-  margin: auto;
-  margin-top: 5vh;
-  grid-template-columns: 40vh 80vh;
-  grid-template-rows: 20vh 20vh;
-  justify-content: center;
-  width: 100vw;
-  column-gap: 30vw;
-  row-gap: 20vh;
+  height: 62vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30vh 30vh;
+  justify-items: center;
+  align-items: center;
+  column-gap: 1vw;
+  row-gap: 5vw;
 }
 
 .favorito {
