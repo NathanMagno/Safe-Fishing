@@ -53,7 +53,7 @@ button {
   align-items: center;
 
   &:hover {
-    transition: 1.2s ease-in;
+    transition: 0.45s ease-in;
     background-color: #fd8700;
   }
 }
@@ -73,9 +73,17 @@ a {
 
 .cabecalho-laranja {
   display: flex;
-  background-color: #00000098;
-  position: static;
-  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  background-color: #000000;
+  margin: auto 0;
+  color: aliceblue;
+  width: 120vh;
+  z-index: 1;
+  text-align: center;
+  align-items: center;
+  border-radius: 0px 0px 1000px 1000px;
+  justify-content: space-around;
 }
 
 form div {

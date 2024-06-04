@@ -84,7 +84,7 @@ b {
   margin-top: 2vh;
 
   &:hover {
-    transition: 1.2s ease-in;
+    transition: 0.45s ease-in;
     background-color: #db1212;
   }
 }
