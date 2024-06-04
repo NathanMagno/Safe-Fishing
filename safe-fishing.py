@@ -35,25 +35,6 @@ def criar_email(email):
     email = entrada_valor()
     return email
 
-def quant_caracteres(entrada):
-   while len(entrada) < 8 :
-        print(f"\nSua senha deve possuir no mínimo 8 caracteres: ")
-        entrada = entrada_valor()
-   return entrada
-
-def senha_letras(entrada):
-    valido = False
-    while valido == False:
-        tem = any(char.isalpha() for char in entrada)
-        if tem == True:
-            valido = True
-        else:
-            print(f"\nSua senha deve possuir ao menos uma letra")
-            entrada = entrada_valor()
-    return entrada
-
-
-        
 def valida_senha(entrada):
     valido = False
     while valido == False:
@@ -77,7 +58,8 @@ def criar_senha(senha):
     return senha
 
 def login():
-    pass
+    print("\nO usuário foi direcionado para a tela de login\n\n" +
+          f"1 -> caso tenha esquicido sua senha\n2 -> Realizar login")
 
 
 
@@ -101,16 +83,18 @@ if escolha == 1:
              print(f"Vamos começar a criação de sua conta!\n")
              emailUser = criar_email(emailUser)
              senhaUser = criar_senha(senhaUser)
+             login()
              
         else:
             exit()
             
     else:
-        pass
+        login()
     
 else:
     emailUser = criar_email(emailUser)
     senhaUser = criar_senha(senhaUser)
+    login()
     
     
 print(f"\n\nEmail do usuário: {emailUser}\nsenha do usuário> {senhaUser}")
