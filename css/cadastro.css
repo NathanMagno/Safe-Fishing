@@ -133,10 +133,9 @@ legend {
   position: static;
   display: flex;
   flex-direction: row;
-  margin-inline: 6vw;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 10vh;
 }
-
 
 p {
   font-size: 1.6vw;
@@ -203,14 +202,14 @@ p {
   }
 
   dialog {
-    height: 40vh;
-    width: 80vw;
+    height: 40vh !important;
+    width: 80vw !important;
   }
 
   fieldset {
-    height: 30vh;
-    width: 70vw;
-    gap: 1vh;
+    height: 30vh !important;
+    width: 70vw !important;
+    gap: 1vh !important;
   }
 
   input {
@@ -222,19 +221,20 @@ p {
 
 @media screen and (max-width: 845px) {
   dialog {
-    height: 50vh;
-    width: 80vw;
+    height: 50vh !important;
+    width: 80vw !important;
   }
 
   fieldset {
-    margin: auto;
-    height: 35vh;
-    width: 70vw;
-    gap: 1vh;
+    margin: auto !important;
+    height: 35vh !important;
+    width: 70vw !important;
+    gap: 1vh !important;
   }
 
   input {
     margin: auto;
+
     width: 40vw !important;
     padding: 0.1vw !important;
     height: 2vh !important;
@@ -243,34 +243,33 @@ p {
 
 @media screen and (max-width: 4400px) {
   dialog {
-    position: absolute;
-    margin: auto;
-    padding: 2%;
-    width: 50vw;
-    height: 88vh;
-    background-color: rgba(22, 22, 22, 0.849);
-    border-radius: 16px;
-    border: inset black 1vw 0.2vw;
-    padding: 1.2vw;
-    color: #fd8700;
+    position: absolute !important;
+    margin: auto !important;
+    padding: 1.2em !important;
+    width: 50vw !important;
+    height: 88vh !important;
+    background-color: rgba(22, 22, 22, 0.849) !important;
+    border-radius: 16px !important;
+    border: inset black 1vw 0.2vw !important;
+    padding: 1.2vw !important;
+    color: #fd8700 !important;
 
     overflow: hidden;
   }
 
   fieldset {
-    margin: auto;
-    position: relative;
-    display: flex;
-    height: 68vh;
-    flex-direction: column;
-    width: 40vw;
-    height: 70vh;
-    border-radius: 12px;
-    text-align: center;
-    color: #fd8700;
-    gap: 6vh;
-    padding: 1vw;
-    font-size: 1.2vw;
+    margin: auto !important;
+    position: relative !important;
+    display: flex !important;
+    height: 72vh !important;
+    flex-direction: column !important;
+    width: 40vw !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+    color: #fd8700 !important;
+    gap: 6vh !important;
+    padding: 1vw !important;
+    font-size: 1.2vw !important;
   }
 
   input {

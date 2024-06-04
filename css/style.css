@@ -30,10 +30,11 @@ input {
 
 .cabecalho-funcionalidade {
   display: flex;
-  background-color: #5a5a5a;
+  background: linear-gradient(to left, #00aaff, #53c3d9);
   flex-direction: row;
-  justify-content: space-between;
-  
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.6%;
 }
 
 button {
@@ -123,13 +124,13 @@ section {
   padding: 2.5%;
 }
 
+.btn-localizar {
+  width: 20vw;
+}
+
 @media screen and (max-width: 500px) {
   button {
     width: 50px;
     height: 30px;
   }
-}
-
-.btn-localizar {
-  width: 20vw;
 }
