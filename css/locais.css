@@ -21,18 +21,19 @@ h2 {
   text-align: center;
   color: white;
   font-size: 23px;
+  line-height: 50px;
 }
 
 #favoritos-container {
   display: grid;
   margin: auto;
-  margin-top: 25vh;
-  grid-template-columns: 30vh 30vh;
+  margin-top: 5vh;
+  grid-template-columns: 30vh 100vh;
   grid-template-rows: 20vh 20vh;
   justify-content: center;
   width: 100vw;
   column-gap: 30vw;
-  row-gap: 10vh;
+  row-gap: 20vh;
 }
 
 .favorito {
@@ -60,7 +61,7 @@ h2 {
   background-color: #3da3d0;
   border-radius: 32px;
   width: 20vw;
-  height: 4vh;
+  height: 6vh;
 }
 
 .info-local {
