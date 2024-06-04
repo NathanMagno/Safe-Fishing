@@ -30,25 +30,51 @@ def entrada_valor_numerico():
     entrada = int(input(f"\n"))
     return entrada
 
-def quant_caracteres(entrada):
-   while len(entrada) < 8 :
-        print(f"\nEntrada inválida, você deve informar uma senha com no mínimo 8 caracteres: ")
-        entrada = entrada_valor()
-   return entrada
-
 def criar_email(email):
     print(f"\nVamos começar o processo de criação de conta\nDigite seu email")
     email = entrada_valor()
     return email
-    
+
+def quant_caracteres(entrada):
+   while len(entrada) < 8 :
+        print(f"\nSua senha deve possuir no mínimo 8 caracteres: ")
+        entrada = entrada_valor()
+   return entrada
+
+def senha_letras(entrada):
+    valido = False
+    while valido == False:
+        tem = any(char.isalpha() for char in entrada)
+        if tem == True:
+            valido = True
+        else:
+            print(f"\nSua senha deve possuir ao menos uma letra")
+            entrada = entrada_valor()
+    return entrada
+
+
+        
+def valida_senha(entrada):
+    valido = False
+    while valido == False:
+        temNumero = any(char.isdigit() for char in entrada)
+        temLetra = any(char.isalpha() for char in entrada)
+        tamanho = len(entrada) > 8
+        if temLetra == True and temNumero == True and tamanho == True:
+            valido = True
+        else:
+            print(f"Sua senha não cumpre os requisitos necessários!" +
+                    f"\nLeia os requisitos com atenção e insira uma senha que os cumpra.")
+            entrada = entrada_valor()
+        
+    return entrada
+        
 def criar_senha(senha):
     print(f"\nAgora, crie uma senha forte, seguindo as seguintes regras:" +
           f"\nMínimo 8 caracteres\nconter números\nconter letras")
     senha = entrada_valor()
+    senha = valida_senha(senha)
     return senha
-
-
-        
 
 def login():
     pass
