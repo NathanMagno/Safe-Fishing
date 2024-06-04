@@ -29,7 +29,7 @@ h2 {
   display: grid;
   margin: auto;
   margin-top: 5vh;
-  grid-template-columns: 30vh 100vh;
+  grid-template-columns: 40vh 80vh;
   grid-template-rows: 20vh 20vh;
   justify-content: center;
   width: 100vw;
