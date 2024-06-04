@@ -47,15 +47,8 @@ def criar_senha(senha):
     senha = entrada_valor()
     return senha
 
-def nao_tem_conta(email, senha):
-        print(f"Você não possui cadastro em nossa plataforma\nVocê deseja ser direcionado para a tela de criar conta?"
-              +f"\n\n1 -> Sim\n2 -> Não, desejo sair da plataforma")
-        escolhaUser = entrada_valor_numerico()
-        erro_entrada(escolhaUser, 2)
-        if escolhaUser == 1:
-             print(f"Vamos começar a criação de sua conta!\n")
-        else:
-            exit()
+
+        
 
 def login():
     pass
@@ -74,12 +67,25 @@ erro_entrada(escolha, 2)
 
 if escolha == 1:
     if emailUser == None or senhaUser == None:
-        nao_tem_conta(emailUser, senhaUser)
+        print(f"Você não possui cadastro em nossa plataforma\nVocê deseja ser direcionado para a tela de criar conta?"
+              +f"\n\n1 -> Sim\n2 -> Não, desejo sair da plataforma")
+        escolhaUser = entrada_valor_numerico()
+        erro_entrada(escolhaUser, 2)
+        if escolhaUser == 1:
+             print(f"Vamos começar a criação de sua conta!\n")
+             emailUser = criar_email(emailUser)
+             senhaUser = criar_senha(senhaUser)
+             
+        else:
+            exit()
+            
     else:
-        login()
+        pass
     
 else:
     emailUser = criar_email(emailUser)
     senhaUser = criar_senha(senhaUser)
-    login()
+    
+    
+print(f"\n\nEmail do usuário: {emailUser}\nsenha do usuário> {senhaUser}")
 
