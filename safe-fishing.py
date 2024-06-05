@@ -168,3 +168,51 @@ else:
     
 # Agora o usuário já está dentro da plataforma, na tela inicial 
 
+locais_pesca = ("Pantanal",
+    "Amazônia",
+    "Rio Araguaia",
+    "Bonito",
+    "Chapada dos Guimarães",
+    "Angra dos Reis",
+    "Ilha do Cardoso",
+    "Rio Paraná",
+    "Fernando de Noronha",
+    "Baía de Todos os Santos",
+    "Ilha Grande",
+    "Florianópolis",
+    "Ilha do Marajó",
+    "Pantanal do Miranda",
+    "Rio São Francisco",
+    "Serra da Canastra",
+    "Bacia do Rio Xingu",
+    "Rio Negro",
+    "Itacaré",
+    "Ilhabela",
+    "Delta do Parnaíba",
+    "Bacia do Rio Tapajós",
+    "Parque Nacional da Serra da Bocaina",
+    "Ilha de Santa Catarina",
+    "Bonito",
+    "Serra do Cipó",
+    "Bonito",
+    "Parque Nacional do Pantanal Matogrossense",
+    "Rio Tocantins",
+    "Rio Grande")
+
+locaisFaovitos = []
+
+sair = False
+
+while sair == False:
+   
+    
+     
+    print("\nVocê deseja continuar na plataforma?\n" +
+          "1 -> Sim\n2-> Não")
+    
+    escolha = entrada_valor_numerico()
+    escolha = erro_entrada(escolha, 2)
+    
+    if escolha == 2:
+        print("Até a próxima!")
+        sair = True
