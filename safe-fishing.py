@@ -30,9 +30,21 @@ def entrada_valor_numerico():
     entrada = int(input(f"\n"))
     return entrada
 
+def valida_email(entrada):
+    tem = False
+    if "@" in entrada:
+        tem = True
+    while tem == False:
+        print(f"\nInsira o caractere '@' para a validação de seu email")
+        entrada = entrada_valor()
+        if "@" in entrada:
+            tem = True
+    return entrada
+    
 def criar_email(email):
     print(f"\nVamos começar o processo de criação de conta\nDigite seu email")
     email = entrada_valor()
+    email = valida_email(email)
     return email
 
 def valida_senha(entrada):
@@ -57,10 +69,40 @@ def criar_senha(senha):
     senha = valida_senha(senha)
     return senha
 
-def login():
+def login(email, senha):
     print("\nO usuário foi direcionado para a tela de login\n\n" +
           f"1 -> caso tenha esquicido sua senha\n2 -> Realizar login")
+    escolha = entrada_valor_numerico()
+    escolha = erro_entrada(escolha, 2)
+    
+    if escolha == 1:
+        print("legal fera")
+    
+    if escolha == 2:
+        print(f"\nInforme seu email: ")
+        email_login = entrada_valor()
+        print(f"\nInforme sua senha: ")
+        senha_login = entrada_valor()
+        contador_tentativas = 3
+        
+        while email_login != email or senha_login != senha:
 
+            contador_tentativas -= 1
+            print(f"Email ou senha estão incorretos, por favor, preencha os campos novamente\n"
+            +f"Você ainda possui {contador_tentativas} tentativas")
+    
+            if contador_tentativas <= 0:
+                print(f"Você atingiu a quantidade limite de tentativas, tente novamente após 10 segundos.")
+                time.sleep(10.0)
+                contador_tentativas = 3
+    
+            email_login = input(f"\nInforme seu email: ")
+            senha_login = input(f"\nInforme sua senha: ")
+
+        if email == email_login and senha == senha_login:
+            print(f"Acesso liberado")
+            
+        
 
 
 emailUser = None 
@@ -83,19 +125,19 @@ if escolha == 1:
              print(f"Vamos começar a criação de sua conta!\n")
              emailUser = criar_email(emailUser)
              senhaUser = criar_senha(senhaUser)
-             login()
+             login(emailUser, senhaUser)
              
         else:
             exit()
             
     else:
-        login()
+        login(emailUser, senhaUser)
     
 else:
     emailUser = criar_email(emailUser)
     senhaUser = criar_senha(senhaUser)
-    login()
+    login(emailUser, senhaUser)
     
     
-print(f"\n\nEmail do usuário: {emailUser}\nsenha do usuário> {senhaUser}")
+# Agora o usuário já está dentro da plataforma, na tela inicial
 
