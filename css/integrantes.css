@@ -94,13 +94,13 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    border-radius: 32px;
+    border-radius: 52px;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 2vw;
     border: inset 0.15vw rgb(153, 0, 255);
     margin-bottom: 6vh;
-    width: 28vw;
+    width: 24vw;
     a {
       text-decoration: none;
       color: rgb(153, 0, 255);
