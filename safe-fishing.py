@@ -105,7 +105,6 @@ def login(email, senha):
             print(f"Email inválido, você foi desconectado")
             exit()
     
-    
     print(f"\nInforme seu email: ")
     email_login = entrada_valor()
     print(f"\nInforme sua senha: ")
@@ -129,9 +128,29 @@ def login(email, senha):
     if email == email_login and senha == senha_login:
         print(f"Acesso liberado")
         
+
+def menu():
+        print(f"\nO usuário foi direcionado para a página inicial do projeto")
+
+        print(f"Na tela inicial, o usuário pode escolher entre:\n"
+                +f"1 - Procurar por locais de pesca próximos\n"
+                +f"2 - Acessar locais de pesca favoritos\n")
         
+        escolha = entrada_valor_numerico()
+        escolha = erro_entrada(escolha, 2)
+        if escolha == 1:
+            print(f"Informe a distância máxima em quilómetros para realizarmos a busca por locais de pesca:")
+            distancia = entrada_valor_numerico()
+            distancia = erro_entrada(escolha, 1000000)
+            locais_proximos(distancia)
+        
+            
+            
+def locais_proximos(distancia):
+    if distancia == 10:
+        print("locais_pesca[:3]")
 
-
+'''
 emailUser = None 
 senhaUser = None
 
@@ -164,7 +183,7 @@ else:
     emailUser = criar_email(emailUser)
     senhaUser = criar_senha(senhaUser)
     login(emailUser, senhaUser)
-    
+ '''   
     
 # Agora o usuário já está dentro da plataforma, na tela inicial 
 
@@ -204,7 +223,7 @@ locaisFaovitos = []
 sair = False
 
 while sair == False:
-   
+    menu()
     
      
     print("\nVocê deseja continuar na plataforma?\n" +
