@@ -22,6 +22,14 @@ def erro_entrada(entrada, qtdAlternativas):
         pass
     return entrada
 
+def erro_distancia(entrada):
+    while entrada <= 0:
+        entrada = int(input(f"Entrada inválida!\nValores negativos ou nulos não são permitidos\n"))
+    while entrada > 100000:
+        entrada = int(input(f"Entrada inválida!\nA distãncia informada é muito grande\n"))
+    return entrada    
+    
+
 def entrada_valor():
     entrada = input(f"\n")
     return entrada
@@ -139,16 +147,21 @@ def menu():
         escolha = entrada_valor_numerico()
         escolha = erro_entrada(escolha, 2)
         if escolha == 1:
-            print(f"Informe a distância máxima em quilómetros para realizarmos a busca por locais de pesca:")
-            distancia = entrada_valor_numerico()
-            distancia = erro_entrada(escolha, 1000000)
-            locais_proximos(distancia)
+            locais_proximos()
         
             
             
-def locais_proximos(distancia):
-    if distancia == 10:
-        print("locais_pesca[:3]")
+def locais_proximos():
+    print(f"Informe a distância máxima em quilómetros para realizarmos a busca por locais de pesca:")
+    distancia = entrada_valor_numerico()
+    distancia = erro_distancia(distancia)
+    match distancia: 
+        case 1|2|3|4|5|6|7|8|9|10 : print(locais_pesca[:3])
+        case 11|12|13|14|15|16|17|18|19|20 : print(locais_pesca[:7])
+        case 21|22|23|24|25|26|27|28|29|30 : print(locais_pesca[:10])
+        case 31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50 : print(locais_pesca[:19])
+        case 51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70|71|72|73|74|75|76|77|78|79|80|81|82|83|84|85|86|87|88|89|90|90|91|92|93|94|95|96|97|98|99|100 : print(locais_pesca[:30])
+        
 
 '''
 emailUser = None 
