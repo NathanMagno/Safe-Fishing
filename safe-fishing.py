@@ -76,32 +76,59 @@ def login(email, senha):
     escolha = erro_entrada(escolha, 2)
     
     if escolha == 1:
-        print("legal fera")
+        print(f"\n Informe seu email para que possamos enviar "
+                            +"o código de verificação: ")    
+
+        email_recupecao = entrada_valor()    
     
-    if escolha == 2:
-        print(f"\nInforme seu email: ")
-        email_login = entrada_valor()
-        print(f"\nInforme sua senha: ")
-        senha_login = entrada_valor()
-        contador_tentativas = 3
+        if email == email_recupecao:
+            codigo = int(random.randrange(10000, 99999))
+            # Simulando o código de verificação sendo enviado para o email do usuário
+            print(f"\nO código de verificação é:\n{codigo}")
         
-        while email_login != email or senha_login != senha:
-
-            contador_tentativas -= 1
-            print(f"Email ou senha estão incorretos, por favor, preencha os campos novamente\n"
-            +f"Você ainda possui {contador_tentativas} tentativas")
-    
-            if contador_tentativas <= 0:
-                print(f"Você atingiu a quantidade limite de tentativas, tente novamente após 10 segundos.")
-                time.sleep(10.0)
-                contador_tentativas = 3
-    
-            email_login = input(f"\nInforme seu email: ")
-            senha_login = input(f"\nInforme sua senha: ")
-
-        if email == email_login and senha == senha_login:
-            print(f"Acesso liberado")
+            print(f"\nInforme o código de verificação: ")
+            codigo_usuario = entrada_valor_numerico()
+        
+            while codigo_usuario != codigo:
+                print(f"\n\nO Código informado está errado\n")
+                codigo = int(random.randrange(10000, 99999))
             
+                print(f"O código de verificação é:\n{codigo}")
+            
+                codigo_usuario = entrada_valor_numerico()
+                
+            if codigo == codigo_usuario:
+                print(f"\nDigite uma nova senha: ")
+                senha =  entrada_valor()
+                senha = valida_senha(senha)
+        else:
+            print(f"Email inválido, você foi desconectado")
+            exit()
+    
+    
+    print(f"\nInforme seu email: ")
+    email_login = entrada_valor()
+    print(f"\nInforme sua senha: ")
+    senha_login = entrada_valor()
+    contador_tentativas = 3
+    
+    while email_login != email or senha_login != senha:
+
+        contador_tentativas -= 1
+        print(f"Email ou senha estão incorretos, por favor, preencha os campos novamente\n"
+        +f"Você ainda possui {contador_tentativas} tentativas")
+
+        if contador_tentativas <= 0:
+            print(f"Você atingiu a quantidade limite de tentativas, tente novamente após 10 segundos.")
+            time.sleep(10.0)
+            contador_tentativas = 3
+
+        email_login = input(f"\nInforme seu email: ")
+        senha_login = input(f"\nInforme sua senha: ")
+
+    if email == email_login and senha == senha_login:
+        print(f"Acesso liberado")
+        
         
 
 
@@ -139,5 +166,5 @@ else:
     login(emailUser, senhaUser)
     
     
-# Agora o usuário já está dentro da plataforma, na tela inicial
+# Agora o usuário já está dentro da plataforma, na tela inicial 
 
