@@ -66,7 +66,7 @@ a {
   color: #fd8700;
   font-size: 1.2vw;
   text-shadow: black 0.08vw 0.05vw 0.2vw;
-
+  z-index: 2;
   &:hover {
     font-size: 1.4vw;
     transition: all 0.2s linear;
@@ -160,5 +160,13 @@ section {
     width: 64px;
     height: 30px;
     font-size: 10px;
+  }
+}
+
+#nav-preserva {
+  display: flex;
+  flex-direction: row;
+  a {
+    margin: 0vh 14vw;
   }
 }
