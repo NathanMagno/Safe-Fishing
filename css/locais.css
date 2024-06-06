@@ -109,35 +109,33 @@ h2 {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    align-content: end;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: end;
+  position: relative;
+}
+
+#rodape-locais-favoritos {
+  margin-top: 13vh;
 }
 
 @media screen and (max-width: 500px) {
-    local-favorito {
-      font-size: 15px !important;
-      
-    }
-
+  local-favorito {
+    font-size: 15px !important;
+  }
 }
 
 @media screen and (max-width: 845px) {
   local-favorito {
     font-size: 30px !important;
-
   }
-
 }
 
 @media screen and (max-width: 4400px) {
   local-favorito {
     font-size: 60px !important;
-
   }
-
 }
