@@ -152,12 +152,12 @@ h1 {
 
 @media screen and (max-width: 1440px) {
   .icone-servico {
-    width: 6vw !important;
+    width: 5vw !important;
   }
 }
 
 @media screen and (max-width: 500px) {
   .icone-servico {
-    width: 2vw !important;
+    width: 40px !important;
   }
 }
