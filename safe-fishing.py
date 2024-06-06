@@ -25,7 +25,7 @@ def erro_entrada(entrada, qtdAlternativas):
 def erro_distancia(entrada):
     while entrada <= 0:
         entrada = int(input(f"Entrada inválida!\nValores negativos ou nulos não são permitidos\n"))
-    while entrada > 100000:
+    while entrada > 100:
         entrada = int(input(f"Entrada inválida!\nA distãncia informada é muito grande\n"))
     return entrada    
     
@@ -78,7 +78,7 @@ def criar_senha(senha):
     return senha
 
 def login(email, senha):
-    print("\nO usuário foi direcionado para a tela de login\n\n" +
+    print(f"\nO usuário foi direcionado para a tela de login\n\n" +
           f"1 -> caso tenha esquicido sua senha\n2 -> Realizar login")
     escolha = entrada_valor_numerico()
     escolha = erro_entrada(escolha, 2)
@@ -148,11 +148,51 @@ def menu():
         escolha = erro_entrada(escolha, 2)
         if escolha == 1:
             locais_proximos()
+        else:
+            manipular_favoritos()
         
+def manipular_favoritos():
+    if (len(locais_favoritos) == 0):
+        print(f"Você não tem locais favoritos ainda.\nDeseja adicionar?" +
+              f"\n\n1 -> Sim\n2 -> Não, quero voltar para a página inicial")
+        escolha = entrada_valor_numerico()
+        escolha = erro_entrada(escolha, 2)
+        if escolha == 1:
+            adicionar_locais()
+        else:
+            menu()
             
+    else:
+        print(f"Seus locais favoritos: {locais_favoritos}\n"+
+              f"\n1 -> Adicionar locais\n2 -> Remover locais\n3 -> Voltar para tela inicial")
+        escolha = entrada_valor_numerico()
+        escolha = erro_entrada(escolha, 3)
+        if escolha == 1:
+            adicionar_locais()
+        elif escolha == 2:
+            remover_locais()
+        else:
+            menu()
+
+def adicionar_locais():
+    print(f"\nDigite o nome do local que você deseja adicionar:\n")
+    local = entrada_valor()
+    locais_favoritos.append(local)
+    manipular_favoritos()
+            
+def remover_locais():
+    index = 1
+    print(f"Qual local você deseja remover?")
+    for local_atual in locais_favoritos:
+        print(f"{index} -> {local_atual}\n")
+        index += 1
+    escolha = entrada_valor_numerico()
+    locais_favoritos.pop(escolha-1)
+    manipular_favoritos()
             
 def locais_proximos():
-    print(f"Informe a distância máxima em quilómetros para realizarmos a busca por locais de pesca:")
+    print(f"Informe a distância máxima em quilómetros para realizarmos a busca por locais de pesca.\n"
+          + "O limite de busca do sistema é até 100 quilometrôs")
     distancia = entrada_valor_numerico()
     distancia = erro_distancia(distancia)
     match distancia: 
@@ -163,7 +203,7 @@ def locais_proximos():
         case 51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70|71|72|73|74|75|76|77|78|79|80|81|82|83|84|85|86|87|88|89|90|90|91|92|93|94|95|96|97|98|99|100 : print(locais_pesca[:30])
         
 
-'''
+
 emailUser = None 
 senhaUser = None
 
@@ -196,8 +236,7 @@ else:
     emailUser = criar_email(emailUser)
     senhaUser = criar_senha(senhaUser)
     login(emailUser, senhaUser)
- '''   
-    
+
 # Agora o usuário já está dentro da plataforma, na tela inicial 
 
 locais_pesca = ("Pantanal",
@@ -231,20 +270,19 @@ locais_pesca = ("Pantanal",
     "Rio Tocantins",
     "Rio Grande")
 
-locaisFaovitos = []
+locais_favoritos = []
 
 sair = False
 
 while sair == False:
     menu()
     
-     
-    print("\nVocê deseja continuar na plataforma?\n" +
+    print(f"\nVocê deseja continuar na plataforma?\n" +
           "1 -> Sim\n2-> Não")
     
     escolha = entrada_valor_numerico()
     escolha = erro_entrada(escolha, 2)
     
     if escolha == 2:
-        print("Até a próxima!")
+        print(f"Até a próxima!")
         sair = True
