@@ -57,8 +57,8 @@ h2 {
   display: block;
   text-align: center;
   align-content: center;
-  font-size: 160%;
   font-weight: bold;
+  font-size: 2vw;
   background-color: #3da3d0;
   border-radius: 32px;
   width: 20vw;
@@ -123,19 +123,19 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  local-favorito {
-    font-size: 15px !important;
+  #info-favoritos {
+    font-size: 12px !important;
   }
 }
 
 @media screen and (max-width: 845px) {
-  local-favorito {
-    font-size: 30px !important;
+  #info-favoritos {
+    font-size: 16px !important;
   }
 }
 
 @media screen and (max-width: 4400px) {
-  local-favorito {
-    font-size: 60px !important;
+  #info-favoritos {
+    font-size: 28px;
   }
 }
