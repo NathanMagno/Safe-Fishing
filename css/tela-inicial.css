@@ -41,8 +41,8 @@
   img {
     position: relative;
     &:hover {
-      transition: 1.1s ease-in;
-      background-color: #1a5dec;
+      transition: 0.3s ease-in;
+      background-color: #ffffff;
     }
   }
 }
@@ -64,7 +64,7 @@
   img {
     position: relative;
     &:hover {
-      transition: 1.1s ease-in;
+      transition: 0.3s ease-in;
       background-color: #ffffff;
     }
   }
@@ -86,8 +86,9 @@
   align-items: center;
   img {
     position: relative;
+
     &:hover {
-      transition: 1.1s ease-in;
+      transition: 0.3s ease-in;
       background-color: #ffffff;
     }
   }
@@ -110,8 +111,8 @@
   img {
     position: relative;
     &:hover {
-      transition: 1.1s ease-in;
-      background-color: #1a5dec;
+      transition: 0.3s ease-in;
+      background-color: #ffffff;
     }
   }
 }
