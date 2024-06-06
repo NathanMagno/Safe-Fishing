@@ -71,6 +71,18 @@ a {
   }
 }
 
+#titulo-beneficios {
+  color: #000000;
+  background-color: #fd8700;
+  justify-content: start;
+  border-radius: 16px;
+  padding: 0.3vw;
+  text-align: center;
+  align-items: start;
+  width: 26vw;
+  margin-bottom: 1vh;
+}
+
 .cabecalho-laranja {
   display: flex;
   flex-direction: row;
