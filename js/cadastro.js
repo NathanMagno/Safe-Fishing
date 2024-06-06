@@ -13,10 +13,6 @@ btnEsconde.addEventListener("click",() => {
     esconde.close();
     });
     }
-    else
-    {
-        console.log("Não encontrou");
-    }
   
 const novoUsuario = JSON.parse(localStorage.getItem("novaConta")); 
 const novaSenha = JSON.parse(localStorage.getItem("senhaUser"));
@@ -37,20 +33,17 @@ if (emailRecuperacao != null)
         if (emailRecuperacao == listaUsuario[u].emailUsuario)
         {
             listaUsuario[u].senhaUsuario = novaSenha;
-            console.log("nova senha é: " + listaUsuario[u].senhaUsuario);
+        
         }
     }   
 }
 
 if (novoUsuario){
     listaUsuario.push(novoUsuario);
-    console.log("foi add");
+    
 }
-else{
-    console.log("Nenhum usuário foi encontrado");
-    }
 
-console.log(listaUsuario);
+
 
 const validar = (email, senha)=>{
 

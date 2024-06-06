@@ -52,7 +52,5 @@ function codigo(input){
     {
     window.location.href = "../html/nova-senha.html";
     }
-    else{
-        console.log("Código inváido");
-    }
+  
 }
