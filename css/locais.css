@@ -30,11 +30,11 @@ h2 {
   display: grid;
   height: 62vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30vh 30vh;
+  grid-template-rows: 22vh 22vh;
   justify-items: center;
   align-items: center;
   column-gap: 1vw;
-  row-gap: 5vw;
+  row-gap: 5vh;
 }
 
 .favorito {
@@ -48,7 +48,7 @@ h2 {
   background-color: #000000;
   border-radius: 20px;
   width: 40vw;
-  height: 28vh;
+  height: 26vh;
   border: 0.25vw solid #3da3d0;
   border-style: ridge;
 }
