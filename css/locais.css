@@ -46,7 +46,7 @@ h2 {
   margin: auto;
   justify-content: center;
   background-color: #000000;
-  border-radius: 20px;
+  border-radius: 32px;
   width: 40vw;
   height: 26vh;
   border: 0.25vw solid #3da3d0;
@@ -61,7 +61,7 @@ h2 {
   font-size: 2vw;
   background-color: #3da3d0;
   border-radius: 32px;
-  width: 20vw;
+  width: 36vw;
   height: 6vh;
 }
 
@@ -78,7 +78,7 @@ h2 {
     padding: 1.2em;
     text-align: center;
     align-items: start;
-    border-radius: 12px;
+    border-radius: 32px;
     width: 12vw;
     height: 3vh;
     font-size: 2vw;
@@ -137,5 +137,14 @@ footer {
 @media screen and (max-width: 4400px) {
   #info-favoritos {
     font-size: 28px;
+  }
+}
+
+#btn-salvar {
+  margin-top: 2vh;
+
+  &:hover {
+    transition: 0.45s ease-in;
+    background: linear-gradient(to bottom, #00dd30, #006b17);
   }
 }
