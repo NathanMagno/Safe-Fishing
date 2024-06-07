@@ -23,8 +23,13 @@ const criarConta = (nomeU, cpfU, emailU, senhaU) => {
   criarUser.emailUsuario = emailU.value;
   criarUser.senhaUsuario = senhaU.value;
 
+
+  msgCC.setAttribute("class", "sucesso");
+  msgCC.textContent = "Sua conta foi criada com sucesso";
   localStorage.setItem("novaConta", JSON.stringify(criarUser));
+  setTimeout(() => {
   window.location.href = "../html/login.html";
+  }, 4000);
 
   return false;
 };

@@ -147,7 +147,7 @@ p {
 .sucesso {
   position: relative;
   font-size: 2vw;
-  color: rgb(1, 223, 1);
+  color: rgb(0, 180, 0);
 }
 
 .negado {
