@@ -5,7 +5,7 @@
   justify-items: center;
   h1 {
     margin-top: 8vh;
-    font-size: 3vw;
+    font-size: 2vw;
     color: #ffffff;
   }
 }
@@ -29,7 +29,7 @@
 }
 
 .integrantes-info {
-  margin-top: 6vh;
+  margin-top: 2vh;
   display: grid;
   grid-template-columns: 30vw 40vw 30vw;
   justify-items: center;
@@ -50,20 +50,20 @@
 
 #img-gabriel {
   border-radius: 300px;
-  width: 47%;
+  width: 36%;
   position: relative;
   margin-bottom: 5vh;
 }
 
 #img-gustavo {
   border-radius: 320px;
-  width: 36%;
+  width: 26%;
   position: relative;
 }
 
 #img-nathan {
   border-radius: 320px;
-  width: 50%;
+  width: 36%;
   position: relative;
 }
 
