@@ -140,7 +140,7 @@ footer {
   }
 }
 
-#btn-salvar {
+.btn-salvar {
   margin-top: 2vh;
 
   &:hover {
