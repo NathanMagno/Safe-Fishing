@@ -103,7 +103,8 @@ a {
 }
 
 #preserva {
-  margin-bottom: 120vh;
+  margin-bottom: 100vh;
+  padding: 0vh 3vw;
 }
 
 form div {
@@ -122,6 +123,26 @@ main {
   }
 }
 
+.preserva-container {
+  width: 100vw;
+  height: 120vh;
+  padding: 100px;
+  background: linear-gradient(to bottom, #00aaff, #53c3d9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+  }
+}
+
 footer {
   nav div {
     margin-top: 40vh;
@@ -132,7 +153,6 @@ footer {
     justify-content: space-around;
   }
 }
-
 .dialog-container {
   display: flex;
   flex-direction: column;
@@ -156,6 +176,17 @@ section {
   width: 20vw;
 }
 
+section {
+  margin: auto 0;
+  padding: 0;
+}
+
+.nav-preserva {
+  display: flex;
+  flex-direction: row;
+  height: 2vh;
+  margin-bottom: 10vh;
+}
 @media screen and (max-width: 800px) {
   button {
     width: 64px;
@@ -164,10 +195,8 @@ section {
   }
 }
 
-#nav-preserva {
-  display: flex;
-  flex-direction: row;
-  a {
-    margin: 0vh 14vw;
+@media screen and (max-width: 500px) {
+  .preserva-container {
+    height: 100vh;
   }
 }
