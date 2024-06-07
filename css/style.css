@@ -73,7 +73,7 @@ a {
   }
 }
 
-#titulo-beneficios {
+.titulo-beneficios {
   color: #000000;
   background-color: #fd8700;
   justify-content: start;
