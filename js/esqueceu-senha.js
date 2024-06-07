@@ -48,9 +48,19 @@ const validar_email = (email)=>{
 
 
 function codigo(input){
+    let msgValidaCodigo = document.querySelector(".alerta-codigo");
     if (input.value > 0)
     {
     window.location.href = "../html/nova-senha.html";
+    }
+    else{
+        msgValidaCodigo.setAttribute("class", "negado");
+        msgValidaCodigo.textContent = "Informe o código de verificação";
+    
+    setTimeout(() => {
+      msgValidaCodigo.setAttribute("class", "alerta-codigo");
+      msgValidaCodigo.textContent = "";
+    }, 4000);
     }
   
 }
