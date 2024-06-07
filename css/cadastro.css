@@ -172,6 +172,27 @@ p {
   flex-direction: column;
 }
 
+#msg-codigo {
+  height: 2vh;
+}
+
+.codigo-alerta-container {
+  position: static;
+  height: 1vh;
+  margin: auto 0;
+  display: flex;
+
+  justify-content: center;
+}
+
+.alerta-codigo {
+  height: 0.1vh;
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  text-align: center;
+}
+
 #alerta-cc {
   margin-bottom: 60vh;
 }

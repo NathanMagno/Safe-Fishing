@@ -51,7 +51,10 @@ function codigo(input){
     let msgValidaCodigo = document.querySelector(".alerta-codigo");
     if (input.value > 0)
     {
-    window.location.href = "../html/nova-senha.html";
+        msgValidaCodigo.setAttribute("class", "sucesso");
+        msgValidaCodigo.textContent = "Código validado com sucesso";
+          setTimeout(() => {
+    window.location.href = "../html/nova-senha.html";}, 4000);
     }
     else{
         msgValidaCodigo.setAttribute("class", "negado");
