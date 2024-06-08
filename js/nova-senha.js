@@ -1,7 +1,3 @@
-const btn_salvar = document.querySelector("#btn-salvar-senha");
-
-console.log("nao");
-
 const salve = (senha)=> {
 
     const novaSenha = senha.value;

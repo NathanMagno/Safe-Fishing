@@ -6,7 +6,7 @@ listaEmails = [
 ]
 
 
-const validar_email = (email)=>{
+const validarEmail = (email)=>{
 
     let msg = document.querySelector(".valida-email");
 
@@ -16,15 +16,15 @@ const validar_email = (email)=>{
         {
           
             localStorage.setItem("email-recuperacao", JSON.stringify(listaEmails[u]));
-            const modal_codigo = document.querySelector("dialog");
+            const modalCodigo = document.querySelector("dialog");
             
             document.querySelector("form").reset();
 
-            modal_codigo.showModal();
+            modalCodigo.showModal();
 
-            const msg_codigo = document.querySelector("#msg-codigo");  
+            const msgCodigo = document.querySelector("#msg-codigo");  
          
-            msg_codigo.textContent = `Enviamos uma mensagem com o código de verificação para o ` +
+            msgCodigo.textContent = `Enviamos uma mensagem com o código de verificação para o ` +
             `email ${listaEmails[u]}. ` + "Informe o código de verificação"
 
                  return false;
