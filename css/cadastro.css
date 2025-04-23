@@ -1,0 +1,321 @@
+.cadastro-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #00aaff, #53c3d9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.onda-container {
+  text-align: center;
+  align-items: center;
+}
+
+#fixa-onda {
+  width: 45vw;
+  height: 55vh;
+  z-index: 2;
+}
+
+.oceano-onda {
+  position: fixed;
+  width: 200vw;
+  height: 60vh;
+  align-content: start;
+  display: flex;
+  background: url(../img/onda.webp) repeat-x;
+  background-size: cover;
+  animation: wave-animation 34s linear infinite;
+  z-index: -1;
+}
+
+@keyframes wave-animation {
+  from {
+    transform: translateX(-60%);
+  }
+  to {
+    transform: translateX(-20%);
+  }
+}
+
+fieldset {
+  margin: auto;
+  position: relative;
+  display: flex;
+  height: 68vh;
+  flex-direction: column;
+  border-radius: 12px;
+  text-align: center;
+  color: #fd8700;
+  gap: 6vh;
+  padding: 1vw;
+  font-size: 1.2vw;
+}
+
+b {
+  color: #fd8700;
+  text-shadow: black 0.08vw 0.1vw 0.3vw;
+}
+
+#btn-fechar {
+  margin-top: 2vh;
+
+  &:hover {
+    transition: 0.45s ease-in;
+    background-color: #db1212;
+  }
+}
+
+.content {
+  display: flex;
+  margin-top: 30vh;
+  z-index: 0;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.entrada {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+dialog {
+  position: absolute;
+  margin: auto;
+  padding: 2%;
+  background-color: rgba(22, 22, 22, 0.849);
+  border-radius: 16px;
+  border: inset black 1vw 0.2vw;
+  padding: 1.2vw;
+  color: #fd8700;
+
+  overflow: hidden;
+}
+
+legend {
+  font-size: 130%;
+}
+
+#opcoes-cadastro {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+}
+
+p {
+  font-size: 1.6vw;
+  margin-bottom: 16vh;
+}
+
+.container-valida {
+  position: static;
+  margin: auto;
+  width: 30vw;
+  height: 2vw;
+
+  text-align: center;
+  align-items: center;
+}
+
+.sucesso {
+  position: relative;
+  font-size: 2vw;
+  color: rgb(0, 180, 0);
+}
+
+.negado {
+  position: relative;
+  font-size: 2vw;
+  color: #db1212;
+}
+
+.form-cc {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5vh;
+  margin-top: 92vh;
+}
+
+#btn-cc {
+  margin-top: 0.1vh;
+}
+
+.entrada-cc {
+  display: flex;
+  flex-direction: column;
+}
+
+#msg-codigo {
+  height: 2vh;
+}
+
+.codigo-alerta-container {
+  position: static;
+  height: 1vh;
+  margin: auto 0;
+  display: flex;
+
+  justify-content: center;
+}
+
+.alerta-codigo {
+  height: 0.1vh;
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  text-align: center;
+}
+
+#alerta-cc {
+  margin-bottom: 60vh;
+}
+
+.informativo {
+  position: static;
+  margin-top: 50vh;
+}
+
+.informativo2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+#btn-salvar-senha {
+  display: block;
+  margin-top: 10vh;
+}
+
+@media screen and (max-width: 500px) {
+  a {
+    font-size: 2.2vw;
+  }
+
+  dialog {
+    height: 40vh;
+    width: 80vw;
+  }
+
+  fieldset {
+    height: 30vh;
+    width: 70vw;
+    gap: 1vh !important;
+  }
+
+  input {
+    width: 60vw;
+    padding: 0.1vw;
+    height: 2vh !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  dialog {
+    height: 50vh !important;
+    width: 90vw !important;
+  }
+
+  fieldset {
+    margin: auto;
+    height: 35vh !important;
+    width: 80vw !important;
+    gap: 1vh !important;
+  }
+
+  input {
+    margin: auto;
+
+    width: 70vw !important;
+    padding: 0.1vw;
+    height: 2vh !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  input {
+    margin: auto;
+
+    width: 40vw;
+    padding: 0.1vw;
+    height: 2vh !important;
+  }
+}
+
+@media screen and (max-width: 4400px) {
+  dialog {
+    position: absolute;
+    margin: auto;
+    padding: 1.2em;
+    width: 50vw;
+    height: 88vh;
+    background-color: rgba(22, 22, 22, 0.849);
+    border-radius: 16px;
+    border: inset black 1vw 0.2vw;
+    padding: 1.2vw;
+    color: #fd8700;
+
+    overflow: hidden;
+  }
+
+  fieldset {
+    margin: auto;
+
+    display: flex;
+    height: 72vh;
+    flex-direction: column;
+    width: 40vw;
+    border-radius: 12px;
+    text-align: center;
+    color: #fd8700;
+    gap: 6vh;
+    padding: 1vw;
+    font-size: 1.2vw t;
+  }
+
+  input {
+    width: 30vw;
+    padding: 1.1em !important;
+    height: 5vh !important;
+    text-align: center;
+    border: none;
+    font-size: 120%;
+    border-radius: 0.3em;
+    transition: 0.5s ease;
+    &:focus {
+      transition: all 0.4s linear;
+      box-shadow: inset 0 0 0.6vw #000000;
+    }
+
+    &::placeholder {
+      text-align: center;
+      font-size: 120%;
+    }
+  }
+}

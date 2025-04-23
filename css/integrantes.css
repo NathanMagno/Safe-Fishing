@@ -1,0 +1,126 @@
+.integrantes-topo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  h1 {
+    margin-top: 8vh;
+    font-size: 2vw;
+    color: #ffffff;
+  }
+}
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #000000, #1a5dec);
+  align-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: fixed;
+
+  p {
+    margin-top: 16vh;
+  }
+}
+
+.integrantes-info {
+  margin-top: 2vh;
+  display: grid;
+  grid-template-columns: 30vw 40vw 30vw;
+  justify-items: center;
+  color: #ffffff;
+
+  span {
+    margin-top: 2vh;
+  }
+
+  a {
+    margin-top: 2vh;
+  }
+}
+
+.github {
+  width: 12%;
+}
+
+#img-gabriel {
+  border-radius: 300px;
+  width: 36%;
+  position: relative;
+  margin-bottom: 5vh;
+}
+
+#img-gustavo {
+  border-radius: 320px;
+  width: 26%;
+  position: relative;
+}
+
+#img-nathan {
+  border-radius: 320px;
+  width: 36%;
+  position: relative;
+}
+
+#rodape-integrantes {
+  margin-top: 4vh;
+  font-size: 100%;
+}
+
+#repositorio-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  border: inset 0.15vw rgb(153, 0, 255);
+  margin-bottom: 6vh;
+  width: 24vw;
+  a {
+    text-decoration: none;
+    color: rgb(153, 0, 255);
+    font-weight: bold;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 3vw;
+}
+
+@media screen and (max-width: 761px) {
+  #repositorio-container {
+    font-size: 1vw;
+
+    img {
+      width: 3vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #repositorio-container {
+    font-size: 1.5vw;
+
+    img {
+      width: 4vw;
+    }
+  }
+}
+
+@media screen and (max-width: 4400px) {
+  #repositorio-container {
+    font-size: 2vw;
+
+    img {
+      width: 5vw;
+    }
+  }
+}

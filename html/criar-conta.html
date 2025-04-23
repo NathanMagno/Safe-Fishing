@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar Conta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/criar-conta.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecalho-laranja">
+      <h1>Criar conta</h1>
+    </header>
+    <div class="cadastro-container">
+      <div id="alerta-cc">
+        <p class="valida-cc"></p>
+      </div>
+      <main>
+        <form
+          class="form form-cc"
+          action="#"
+          method="get"
+          onsubmit="return criarConta(nome, cpf, email, senha)"
+        >
+          <div class="entrada-cc">
+            <label for="nome">Nome</label>
+            <input
+              id="nome"
+              type="text"
+              placeholder="Digite seu nome completo"
+            />
+          </div>
+          <div class="entrada-cc">
+            <label for="cpf">CPF</label>
+            <input
+              id="cpf"
+              type="text"
+              placeholder="Informe seu CPF"
+              maxlength="11"
+            />
+          </div>
+          <div class="entrada-cc">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Digite seu email" />
+          </div>
+          <div class="entrada-cc">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" placeholder="Digite sua senha" />
+          </div>
+          <button id="btn-cc" type="submit">Criar</button>
+          <nav>
+            <a href="./login.html">Página inicial</a>
+          </nav>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

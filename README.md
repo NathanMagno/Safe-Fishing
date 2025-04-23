@@ -5,6 +5,14 @@ Baseado nessa dor, o projeto **Safe Fishing** é uma aplicação que busca auxil
 
 # Integrantes
 
-Nathan Magno Gustavo Cônsolo  RM 558987
-Gustavo de Aguiar Lima Silva  RM 557707
-Gabriel Yuji Suzuki  RM 556588
+* Nathan Magno Gustavo Cônsolo  RM 558987
+* Gustavo de Aguiar Lima Silva  RM 557707
+* Gabriel Yuji Suzuki  RM 556588
+
+## Link Repositório Remoto
+
+https://github.com/Hitz299/Global-Solution.git
+
+# Funcionalidades js
+
+O site possui um sistema funcional para cadastro de usuários na plataforma, incluindo validação de email e senha, criação de novas contas e recuperação de senha por email. 
