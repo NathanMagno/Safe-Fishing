@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperar Senha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/esqueceu-senha.js"></script>
+  </head>
+  <body>
+    <header class="cabecalho-laranja">
+      <h1 class="texto-cadastro">Esqueci a senha</h1>
+    </header>
+    <div class="cadastro-container">
+      <main>
+        <span class="informativo informativo1">
+          Clique no botão para enviar o código de verificação para seu email:
+        </span>
+        <dialog id="modal-codigo">
+          <p id="msg-codigo"></p>
+          <div class="dialog-container">
+            <div class="codigo-alerta-container">
+              <p class="alerta-codigo"></p>
+            </div>
+            <form>
+              <div class="entrada">
+                <label for="inpCodigo">Código de verificação</label>
+                <input
+                  type="number"
+                  name="txtCodigo"
+                  id="inpCodigo"
+                  placeholder="Informe o código"
+                />
+              </div>
+            </form>
+            <div>
+              <button onclick="codigo(inpCodigo)">Enviar</button>
+              <span class="informativo informativo2">
+                Caso deseje fechar esta tela, pressione "esc"
+              </span>
+            </div>
+          </div>
+        </dialog>
+        <p class="valida-email"></p>
+        <form action="#" method="get" onsubmit="return validarEmail(email)">
+          <div>
+            <h2 class="texto-cadastro">Email</h2>
+            <label for="email"></label>
+            <input id="email" type="email" placeholder="Digite seu email" />
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </main>
+
+      <footer>
+        <nav>
+          <div>
+            <a href="./login.html">Página de login</a>
+            <a href="./criar-conta.html">Criar conta</a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

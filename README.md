@@ -12,3 +12,7 @@ Baseado nessa dor, o projeto **Safe Fishing** é uma aplicação que busca auxil
 ## Link Repositório Remoto
 
 https://github.com/Hitz299/Global-Solution.git
+
+# Funcionalidades js
+
+O site possui um sistema funcional para cadastro de usuários na plataforma, incluindo validação de email e senha, criação de novas contas e recuperação de senha por email. 

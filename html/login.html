@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Fishing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/cadastro.js" defer></script>
+  </head>
+  <body>
+    <div class="cadastro-container">
+      <div class="onda-container">
+        <div class="content">
+          <h1>Bem-vindo ao <b>Safe Fishing</b></h1>
+          
+          <p>Um lugar mais tranquilo para a sua pesca</p>
+          <dialog>
+            <form
+              action="#"
+              method="get"
+              onsubmit="return validar(idEmail,idSenha)"
+            >
+              <fieldset>
+                <legend>LOGIN</legend>
+                <div class = "container-valida">
+                  <p class="valida"></p>
+                </div>
+                <div class="entrada">
+                  <label for="idEmail">Email</label>
+                  <input
+                    type="email"
+                    name="txtEmail"
+                    id="idEmail"
+                    placeholder="Digite seu email"
+                  />
+                </div>
+                <div class="entrada">
+                  <label for="idSenha">Senha</label>
+                  <input
+                    type="password"
+                    name="txtSenha"
+                    id="idSenha"
+                    placeholder="Digite sua senha"
+                  />
+                </div>
+                <div>
+                
+                    <button type="submit">Entrar</button>
+              
+                </div>
+                <nav>
+                  <div id="opcoes-cadastro">
+                    <a href="./esqueci-senha.html">Esqueci minha senha</a>
+                    <a href="./criar-conta.html">Criar conta</a>
+                  </div>
+                </nav>
+              </fieldset>
+            </form>
+            <button id="btn-fechar">Fechar</button>
+          </dialog>
+
+          <div id="fixa-onda">
+            <button id="entrar-modal">Começar</button>
+
+            <div class="oceano-onda"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
