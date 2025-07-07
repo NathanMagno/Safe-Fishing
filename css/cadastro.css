@@ -117,10 +117,6 @@ dialog {
   overflow: hidden;
 }
 
-legend {
-  font-size: 130%;
-}
-
 #opcoes-cadastro {
   position: static;
   display: flex;
@@ -213,61 +209,6 @@ p {
   margin-top: 10vh;
 }
 
-@media screen and (max-width: 500px) {
-  a {
-    font-size: 2.2vw;
-  }
-
-  dialog {
-    height: 40vh;
-    width: 80vw;
-  }
-
-  fieldset {
-    height: 30vh;
-    width: 70vw;
-    gap: 1vh !important;
-  }
-
-  input {
-    width: 60vw;
-    padding: 0.1vw;
-    height: 2vh !important;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  dialog {
-    height: 50vh !important;
-    width: 90vw !important;
-  }
-
-  fieldset {
-    margin: auto;
-    height: 35vh !important;
-    width: 80vw !important;
-    gap: 1vh !important;
-  }
-
-  input {
-    margin: auto;
-
-    width: 70vw !important;
-    padding: 0.1vw;
-    height: 2vh !important;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  input {
-    margin: auto;
-
-    width: 40vw;
-    padding: 0.1vw;
-    height: 2vh !important;
-  }
-}
-
 @media screen and (max-width: 4400px) {
   dialog {
     position: absolute;
@@ -282,6 +223,10 @@ p {
     color: #fd8700;
 
     overflow: hidden;
+
+    label {
+      font-size: 24px;
+    }
   }
 
   fieldset {
@@ -305,17 +250,73 @@ p {
     height: 5vh !important;
     text-align: center;
     border: none;
-    font-size: 120%;
     border-radius: 0.3em;
     transition: 0.5s ease;
+
     &:focus {
       transition: all 0.4s linear;
       box-shadow: inset 0 0 0.6vw #000000;
     }
+  }
 
-    &::placeholder {
-      text-align: center;
-      font-size: 120%;
-    }
+  legend {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  dialog {
+    height: 50vh !important;
+    width: 90vw !important;
+  }
+
+  input {
+    margin: auto;
+    width: 90%;
+    padding: 0.1em !important;
+    height: 5vh !important;
+    font-size: 26px;
+  }
+
+  input::placeholder {
+    font-size: 22px;
+  }
+
+  fieldset {
+    margin: auto;
+    height: 35vh !important;
+    width: 80vw !important;
+    gap: 1vh !important;
+  }
+
+  legend {
+    font-size: 16.5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  a {
+    font-size: 2.2vw;
+  }
+
+  dialog {
+    height: 40vh;
+    width: 80vw;
+  }
+
+  fieldset {
+    height: 30vh;
+    width: 70vw;
+    gap: 1vh !important;
+  }
+
+  legend {
+    font-size: 16px;
   }
 }
