@@ -36,6 +36,25 @@
   width: 45vw;
   height: 55vh;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.centraliza-botao {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.centraliza-botao button {
+  pointer-events: auto;
 }
 
 .oceano-onda {
@@ -126,7 +145,6 @@ dialog {
 }
 
 p {
-  font-size: 1.6vw;
   margin-bottom: 16vh;
 }
 
@@ -229,6 +247,9 @@ p {
     }
   }
 
+  input::placeholder {
+    font-size: 22px;
+  }
   fieldset {
     margin: auto;
 
@@ -262,6 +283,13 @@ p {
   legend {
     font-size: 30px;
   }
+
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -276,6 +304,10 @@ p {
     width: 90vw !important;
   }
 
+  h1 {
+    font-size: 22px;
+  }
+
   input {
     margin: auto;
     width: 90%;
@@ -285,7 +317,7 @@ p {
   }
 
   input::placeholder {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   fieldset {
@@ -297,6 +329,10 @@ p {
 
   legend {
     font-size: 16.5px;
+  }
+
+  p {
+    font-size: 12.5px;
   }
 }
 

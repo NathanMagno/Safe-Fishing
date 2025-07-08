@@ -8,15 +8,11 @@
   font-style: normal;
 }
 
-h1 {
-  font-size: 3vw;
-}
-
 input {
   padding: 0.8em;
   text-align: center;
   border: none;
-  font-size: 120%;
+
   border-radius: 0.3em;
   transition: 0.3s ease;
   &:focus {
@@ -24,9 +20,8 @@ input {
     box-shadow: inset 0 0 0.6vw #000000;
   }
 
-  &::placeholder {
+  input::placeholder {
     text-align: center;
-    font-size: 120%;
   }
 }
 
@@ -56,7 +51,7 @@ button {
   align-items: center;
 
   &:hover {
-    transition: 0.45s ease-in;
+    transition: 0.12s ease-in;
     background-color: #fd8700;
   }
 }
